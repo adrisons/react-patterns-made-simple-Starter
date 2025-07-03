@@ -11,8 +11,8 @@ import WithoutPortal from "./routes/portal/without";
 import RenderPropsPattern from "./routes/render-props";
 
 import HOCExercise from "./routes/hoc/exercise/problem";
-
 import CompositionExercise from "./routes/composition/exercise/problem";
+import CompoundExercise from "./routes/compound/exercise/problem";
 
 function App() {
   return (
@@ -31,6 +31,11 @@ function App() {
         />
 
         <Route path="/compound" element={<CompoundPattern />} />
+        <Route
+          path="/compound/exercise/problem"
+          element={<CompoundExercise />}
+        />
+
         <Route path="portal/with" element={<WithPortal />} />
         <Route path="portal/without" element={<WithoutPortal />} />
         <Route path="render-props" element={<RenderPropsPattern />} />

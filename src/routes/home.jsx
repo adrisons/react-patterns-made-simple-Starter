@@ -44,6 +44,12 @@ const patterns = [
     path: "/compound",
   },
   {
+    title: "Compound Dropdown Exercise",
+    description:
+      "Refactor a basic dropdown into flexible compound components that share context.",
+    path: "/compound/exercise/problem",
+  },
+  {
     title: "Portal - With Pattern",
     description:
       "A demo using the Portal Pattern to render components outside the main DOM tree for advanced UI needs.",
