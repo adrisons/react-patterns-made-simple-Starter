@@ -20,6 +20,12 @@ const patterns = [
     path: "/hoc/exercise/problem",
   },
   {
+    title: "HOC Auth Solution",
+    description:
+      "Solution to the withAuth HOC exercise, showing how to protect pages with login logic using a Higher-Order Component.",
+    path: "/hoc/exercise/solution",
+  },
+  {
     title: "Composition - Without Pattern",
     description:
       "A demo showing a rigid structure that could be improved by using the Composition Pattern.",
@@ -38,6 +44,12 @@ const patterns = [
     path: "/composition/exercise/problem",
   },
   {
+    title: "Composition Card Solution",
+    description:
+      "A solution showing how to break down a complex ProductCard into reusable components using Composition Pattern.",
+    path: "/composition/exercise/solution",
+  },
+  {
     title: "Compound Components Pattern",
     description:
       "A demo showing how Compound Components work together to manage complex UIs in a simple way.",
@@ -50,6 +62,12 @@ const patterns = [
     path: "/compound/exercise/problem",
   },
   {
+    title: "Compound Dropdown Solution",
+    description:
+      "Solution to the Compound Dropdown exercise, showing how to create flexible compound components that share context.",
+    path: "/compound/exercise/solution",
+  },
+  {
     title: "Portal - With Pattern",
     description:
       "A demo using the Portal Pattern to render components outside the main DOM tree for advanced UI needs.",
@@ -60,6 +78,18 @@ const patterns = [
     description:
       "A demo showing the limitations of rendering components inside the main DOM tree without using Portals.",
     path: "/portal/without",
+  },
+  {
+    title: "Portal Toast Exercise",
+    description:
+      "Build a global toast system that uses React Portals and Context to show notifications from anywhere in the app.",
+    path: "/portal/exercise/problem",
+  },
+  {
+    title: "Portal Toast Solution",
+    description:
+      "A complete implementation of a toast notification system using createPortal and Context API for global access.",
+    path: "/portal/exercise/solution",
   },
   {
     title: "Render Props Pattern",
