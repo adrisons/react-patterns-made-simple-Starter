@@ -132,6 +132,114 @@
   .tab-panels {
     @apply mt-4 p-4 bg-black-200 rounded-lg text-gray-300;
   }
+
+  /* Composition Card Exercise */
+  .card {
+    @apply bg-black-100 text-white rounded-lg shadow-lg p-7 w-fit;
+  }
+
+  .card-header {
+    @apply flex items-start justify-between;
+
+    img {
+      @apply size-20 object-cover rounded-md;
+    }
+  }
+
+  .card-badge {
+    @apply bg-indigo-500 text-white px-2 py-1 rounded-md text-sm;
+  }
+
+  .card-body {
+    @apply mt-4;
+
+    h3 {
+      @apply text-lg font-bold;
+    }
+
+    p {
+      @apply text-sm text-gray-400;
+    }
+  }
+
+  .card-price {
+    @apply mt-2 text-2xl font-bold text-green-500;
+  }
+
+  .card-footer {
+    @apply flex gap-5 mt-4;
+  }
+
+  /* Compound Dropdown Exercise */
+  .dropdown {
+    @apply relative inline-block;
+  }
+
+  .dropdown-trigger {
+    @apply px-3 py-1.5 rounded;
+  }
+
+  .dropdown-menu {
+    @apply absolute right-0 mt-2 w-48 bg-black-100 text-white rounded-lg shadow-lg;
+
+    li {
+      @apply px-4 py-2 hover:bg-black-200;
+    }
+  }
+
+  /* Portal Toast Exercise */
+  .toast {
+    @apply fixed top-4 right-4 bg-black-100 flex flex-col gap-3;
+  }
+
+  .toast-message {
+    @apply text-white px-7 py-2 rounded-lg shadow-lg;
+
+    &.success {
+      @apply bg-green-500;
+
+      &::before {
+        @apply content-['✅'] mr-2;
+      }
+    }
+
+    &.error {
+      @apply bg-red-500;
+
+      &::before {
+        @apply content-['❌'] mr-2;
+      }
+    }
+
+    &.warning {
+      @apply bg-yellow-500;
+
+      &::before {
+        @apply content-['⚠️'] mr-2;
+      }
+    }
+  }
+
+  /* Render Props Table Exercise */
+  table {
+    @apply w-full border border-gray-700 text-white;
+
+    thead {
+      @apply bg-gray-800;
+    }
+
+    th {
+      @apply p-2 text-left border-b border-gray-700;
+    }
+
+    td {
+      @apply p-2 border-b border-gray-700;
+    }
+
+    tr {
+      @apply hover:bg-gray-800;
+    }
+  }
 }
 
 @layer utilities {
