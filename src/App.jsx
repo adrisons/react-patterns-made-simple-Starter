@@ -10,6 +10,10 @@ import WithPortal from "./routes/portal/with";
 import WithoutPortal from "./routes/portal/without";
 import RenderPropsPattern from "./routes/render-props";
 
+import HOCExercise from "./routes/hoc/exercise/problem";
+
+import CompositionExercise from "./routes/composition/exercise/problem";
+
 function App() {
   return (
     <div className="bg-black min-h-screen w-full">
@@ -17,8 +21,15 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/hoc/with" element={<WithHoc />} />
         <Route path="/hoc/without" element={<WithoutHoc />} />
+        <Route path="/hoc/exercise/problem" element={<HOCExercise />} />
+
         <Route path="/composition/with" element={<WithComposition />} />
         <Route path="/composition/without" element={<WithoutComposition />} />
+        <Route
+          path="/composition/exercise/problem"
+          element={<CompositionExercise />}
+        />
+
         <Route path="/compound" element={<CompoundPattern />} />
         <Route path="portal/with" element={<WithPortal />} />
         <Route path="portal/without" element={<WithoutPortal />} />

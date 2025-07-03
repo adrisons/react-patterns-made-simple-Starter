@@ -14,6 +14,12 @@ const patterns = [
     path: "/hoc/with",
   },
   {
+    title: "HOC Auth Exercise",
+    description:
+      "An exercise where you create a withAuth HOC to protect Profile and Settings pages, including a login form and conditional rendering.",
+    path: "/hoc/exercise/problem",
+  },
+  {
     title: "Composition - Without Pattern",
     description:
       "A demo showing a rigid structure that could be improved by using the Composition Pattern.",
@@ -24,6 +30,12 @@ const patterns = [
     description:
       "A demo showing how the Composition Pattern helps to create reusable and flexible components.",
     path: "/composition/with",
+  },
+  {
+    title: "Composition Card Exercise",
+    description:
+      "An exercise to refactor a monolithic ProductCard into flexible, composable components using the Composition Pattern.",
+    path: "/composition/exercise/problem",
   },
   {
     title: "Compound Components Pattern",
