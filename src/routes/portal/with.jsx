@@ -14,7 +14,19 @@ function WithPortal() {
         Open Modal
       </button>
 
-      {/* TODO: Implement Portal Pattern */}
+      {isOpen &&
+        ReactDOM.createPortal(
+          <div className="portal">
+            <div>
+              <h2>Modal Content</h2>
+              <p>This is a modal rendered using a portal.</p>
+              <button onClick={toggleModal} className="close-btn">
+                Close
+              </button>
+            </div>
+          </div>,
+          document.body // Appending to the body
+        )}
     </main>
   );
 }
